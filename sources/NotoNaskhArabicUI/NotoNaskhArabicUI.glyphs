@@ -1041,15 +1041,12 @@ featurePrefixes = (
 {
 automatic = 1;
 code = "languagesystem DFLT dflt;
-
 languagesystem arab dflt;
 languagesystem arab SND;
 languagesystem arab URD;
 languagesystem arab KSH;
 languagesystem arab FAR;
-
-languagesystem latn dflt;
-";
+languagesystem latn dflt;";
 name = Languagesystems;
 },
 {
@@ -1068,70 +1065,67 @@ code = "###
 # GSUB features: 8 (ccmp, fina, init, liga, locl, medi, rlig, tnum)
 # GPOS lookups: 8
 # GPOS features: 2 (mark, mkmk)
-
 #
 # Languagesystem definitions
 #
-
 # Latin default
 # Arabic default
 # Arabic Farsi
 # Arabic Kashmiri
 # Arabic Sindhi
 # Arabic Urdu
-
 #
 # Lookup definitions
 #
-
 lookup rlig_arab_3 {
-# GSUB lookup 9, type 11 (Single)
-  sub @rlig by @rlig2;
+    # GSUB lookup 9, type 11 (Single)
+    sub @rlig by @rlig2;
 } rlig_arab_3;
 
 lookup rlig_arab_4 {
-# GSUB lookup 10, type 11 (Single)
-  sub @rlig3 by @rlig4;
+    # GSUB lookup 10, type 11 (Single)
+    sub @rlig3 by @rlig4;
 } rlig_arab_4;
 
 lookup ccmp_arab_5 {
-# GSUB lookup 17, type 11 (Single)
-  sub @ccmp by [uni0601.13 uni06DD.17 uni0600.ccmp uni0602.ccmp uni0603.ccmp uni0604.ccmp];
+    # GSUB lookup 17, type 11 (Single)
+    sub @ccmp by [uni0601.13 uni06DD.17 uni0600.ccmp uni0602.ccmp uni0603.ccmp uni0604.ccmp];
 } ccmp_arab_5;
 
 lookup ccmp_arab_6 {
-# GSUB lookup 18, type 11 (Single)
-  sub @ccmp2 by @ccmp3;
+    # GSUB lookup 18, type 11 (Single)
+    sub @ccmp2 by @ccmp3;
 } ccmp_arab_6;
 
 lookup ccmp_arab_8 {
-# GSUB lookup 19, type 12 (Multiple)
-  sub uni0660.ccmp by _1485 uni0660.ccmp;
-  sub uni0661.ccmp by _1485 uni0661.ccmp;
-  sub uni0662.ccmp by _1485 uni0662.ccmp;
-  sub uni0663.ccmp by _1485 uni0663.ccmp;
-  sub uni0664.ccmp by _1485 uni0664.ccmp;
-  sub uni0665.ccmp by _1485 uni0665.ccmp;
-  sub uni0666.ccmp by _1485 uni0666.ccmp;
-  sub uni0667.ccmp by _1485 uni0667.ccmp;
-  sub uni0668.ccmp by _1485 uni0668.ccmp;
-  sub uni0669.ccmp by _1485 uni0669.ccmp;
-  sub uni06F4.ccmp by _1485 uni06F4.ccmp;
-  sub uni06F5.ccmp by _1485 uni06F5.ccmp;
-  sub uni06F6.ccmp by _1485 uni06F6.ccmp;
-  sub _971 by _1485 _971;
-  sub _972 by _1485 _972;
-  sub uni0030.ccmp by _1485 uni0030.ccmp;
-  sub uni0031.ccmp by _1485 uni0031.ccmp;
-  sub uni0032.ccmp by _1485 uni0032.ccmp;
-  sub uni0033.ccmp by _1485 uni0033.ccmp;
-  sub uni0034.ccmp by _1485 uni0034.ccmp;
-  sub uni0035.ccmp by _1485 uni0035.ccmp;
-  sub uni0036.ccmp by _1485 uni0036.ccmp;
-  sub uni0037.ccmp by _1485 uni0037.ccmp;
-  sub uni0038.ccmp by _1485 uni0038.ccmp;
-  sub uni0039.ccmp by _1485 uni0039.ccmp;
+    # GSUB lookup 19, type 12 (Multiple)
+    sub uni0660.ccmp by _1485 uni0660.ccmp;
+    sub uni0661.ccmp by _1485 uni0661.ccmp;
+    sub uni0662.ccmp by _1485 uni0662.ccmp;
+    sub uni0663.ccmp by _1485 uni0663.ccmp;
+    sub uni0664.ccmp by _1485 uni0664.ccmp;
+    sub uni0665.ccmp by _1485 uni0665.ccmp;
+    sub uni0666.ccmp by _1485 uni0666.ccmp;
+    sub uni0667.ccmp by _1485 uni0667.ccmp;
+    sub uni0668.ccmp by _1485 uni0668.ccmp;
+    sub uni0669.ccmp by _1485 uni0669.ccmp;
+    sub uni06F4.ccmp by _1485 uni06F4.ccmp;
+    sub uni06F5.ccmp by _1485 uni06F5.ccmp;
+    sub uni06F6.ccmp by _1485 uni06F6.ccmp;
+    sub _971 by _1485 _971;
+    sub _972 by _1485 _972;
+    sub uni0030.ccmp by _1485 uni0030.ccmp;
+    sub uni0031.ccmp by _1485 uni0031.ccmp;
+    sub uni0032.ccmp by _1485 uni0032.ccmp;
+    sub uni0033.ccmp by _1485 uni0033.ccmp;
+    sub uni0034.ccmp by _1485 uni0034.ccmp;
+    sub uni0035.ccmp by _1485 uni0035.ccmp;
+    sub uni0036.ccmp by _1485 uni0036.ccmp;
+    sub uni0037.ccmp by _1485 uni0037.ccmp;
+    sub uni0038.ccmp by _1485 uni0038.ccmp;
+    sub uni0039.ccmp by _1485 uni0039.ccmp;
 } ccmp_arab_8;
+
 #
 # Feature definitions
 #";
@@ -1142,247 +1136,275 @@ features = (
 {
 automatic = 1;
 code = "feature fina;
-feature init;
-feature medi;
-feature locl;
-feature tnum;
-";
+    feature init;
+    feature medi;
+    feature locl;
+    feature tnum;";
 name = aalt;
 },
 {
 code = "# GSUB feature: Glyph Composition / Decomposition
-# Lookups: 6
+    # Lookups: 6
+    lookup ccmp_arab_9 {
+        # GSUB lookup 21, type 14 (Ligature)
+        lookupflag IgnoreMarks;
+        sub uni0600.ccmp _1485 _1485 by _1485__1485;
+        sub uni0600.ccmp _1485 by _982;
+        sub uni0601.13 _1485 _1485 _1485 by uni0601.16;
+        sub uni0601.13 _1485 _1485 by uni0601.15;
+        sub uni0601.13 _1485 by uni0601.14;
+        sub uni0602.ccmp _1485 _1485 by _991;
+        sub uni0602.ccmp _1485 by _990;
+        sub uni0603.ccmp _1485 _1485 by _995;
+        sub uni0603.ccmp _1485 by _994;
+        sub uni0604.ccmp _1485 _1485 _1485 by _1485__1485__1485;
+        sub uni0604.ccmp _1485 _1485 by _999;
+        sub uni0604.ccmp _1485 by _998;
+        sub uni06DD.17 _1485 _1485 by uni06DD.19;
+        sub uni06DD.17 _1485 by uni06DD.18;
+    } ccmp_arab_9;
 
-  lookup ccmp_arab_9 {
-  # GSUB lookup 21, type 14 (Ligature)
-    lookupflag IgnoreMarks;
-    sub uni0600.ccmp _1485 _1485 by _1485__1485;
-    sub uni0600.ccmp _1485 by _982;
-    sub uni0601.13 _1485 _1485 _1485 by uni0601.16;
-    sub uni0601.13 _1485 _1485 by uni0601.15;
-    sub uni0601.13 _1485 by uni0601.14;
-    sub uni0602.ccmp _1485 _1485 by _991;
-    sub uni0602.ccmp _1485 by _990;
-    sub uni0603.ccmp _1485 _1485 by _995;
-    sub uni0603.ccmp _1485 by _994;
-    sub uni0604.ccmp _1485 _1485 _1485 by _1485__1485__1485;
-    sub uni0604.ccmp _1485 _1485 by _999;
-    sub uni0604.ccmp _1485 by _998;
-    sub uni06DD.17 _1485 _1485 by uni06DD.19;
-    sub uni06DD.17 _1485 by uni06DD.18;
-  } ccmp_arab_9;
-
-  script arab; # Arabic
-  sub uni0623 by uni0627 uni0654;
-  sub uni0625 by uni0627 uni0655;
-  sub uni064B uni0651 by uni064B_uni0651;
-  sub uni064B uni0654 by uni064B_uni0654;
-  sub uni064C uni0651 by uni064C_uni0651;
-  sub uni064C uni0654 by uni064C_uni0654;
-  sub uni064D uni0651 by uni064D_uni0651;
-  sub uni064D uni0655 by uni064D_uni0655;
-  sub uni064E uni0651 by uni064E_uni0651;
-  sub uni064E uni0654 by uni064E_uni0654;
-  sub uni064F uni0651 by uni064F_uni0651;
-  sub uni064F uni0654 by uni064F_uni0654;
-  sub uni0650 uni0651 by uni0650_uni0651;
-  sub uni0650 uni0655 by uni0650_uni0655;
-  sub uni0651 uni064B by uni064B_uni0651;
-  sub uni0651 uni064C by uni064C_uni0651;
-  sub uni0651 uni064D by uni064D_uni0651;
-  sub uni0651 uni064E by uni064E_uni0651;
-  sub uni0651 uni064F by uni064F_uni0651;
-  sub uni0651 uni0650 by uni0650_uni0651;
-  sub uni0651 uni0670 by uni0651_uni0670;
-  sub uni0654 uni064B by uni064B_uni0654;
-  sub uni0654 uni064C by uni064C_uni0654;
-  sub uni0654 uni064E by uni064E_uni0654;
-  sub uni0654 uni064F by uni064F_uni0654;
-  sub uni0654 uni0652 by uni0654_uni0652;
-  sub uni0655 uni064D by uni064D_uni0655;
-  sub uni0655 uni0650 by uni0650_uni0655;
-  sub uni0670 uni0651 by uni0651_uni0670;
-  sub uni0652 uni0654 by uni0654_uni0652;
-  sub uni0627 uni0654 by uni0623;
-  sub uni0627 uni0655 by uni0625;
-  sub @ccmp' lookup ccmp_arab_5 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6;
-  sub @ccmp' lookup ccmp_arab_5 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6;
-  sub @ccmp' lookup ccmp_arab_5 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6;
-  sub @ccmp' lookup ccmp_arab_5 @ccmp2' lookup ccmp_arab_6;
-  sub [uni0600.ccmp uni0601.13 uni0602.ccmp uni0603.ccmp uni0604.ccmp uni06DD.17] @ccmp5 @ccmp4' lookup ccmp_arab_8;
-  sub _1485 @ccmp5 @ccmp4' lookup ccmp_arab_8;
-  lookup ccmp_arab_9;
-    language SND ; # Sindhi
-    language URD ; # Urdu
-    language KSH ; # Kashmiri
-    language FAR ; # Farsi";
+    script arab;
+    # Arabic
+    sub uni0623 by uni0627 uni0654;
+    sub uni0625 by uni0627 uni0655;
+    sub uni064B uni0651 by uni064B_uni0651;
+    sub uni064B uni0654 by uni064B_uni0654;
+    sub uni064C uni0651 by uni064C_uni0651;
+    sub uni064C uni0654 by uni064C_uni0654;
+    sub uni064D uni0651 by uni064D_uni0651;
+    sub uni064D uni0655 by uni064D_uni0655;
+    sub uni064E uni0651 by uni064E_uni0651;
+    sub uni064E uni0654 by uni064E_uni0654;
+    sub uni064F uni0651 by uni064F_uni0651;
+    sub uni064F uni0654 by uni064F_uni0654;
+    sub uni0650 uni0651 by uni0650_uni0651;
+    sub uni0650 uni0655 by uni0650_uni0655;
+    sub uni0651 uni064B by uni064B_uni0651;
+    sub uni0651 uni064C by uni064C_uni0651;
+    sub uni0651 uni064D by uni064D_uni0651;
+    sub uni0651 uni064E by uni064E_uni0651;
+    sub uni0651 uni064F by uni064F_uni0651;
+    sub uni0651 uni0650 by uni0650_uni0651;
+    sub uni0651 uni0670 by uni0651_uni0670;
+    sub uni0654 uni064B by uni064B_uni0654;
+    sub uni0654 uni064C by uni064C_uni0654;
+    sub uni0654 uni064E by uni064E_uni0654;
+    sub uni0654 uni064F by uni064F_uni0654;
+    sub uni0654 uni0652 by uni0654_uni0652;
+    sub uni0655 uni064D by uni064D_uni0655;
+    sub uni0655 uni0650 by uni0650_uni0655;
+    sub uni0670 uni0651 by uni0651_uni0670;
+    sub uni0652 uni0654 by uni0654_uni0652;
+    sub uni0627 uni0654 by uni0623;
+    sub uni0627 uni0655 by uni0625;
+    sub @ccmp' lookup ccmp_arab_5 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6;
+    sub @ccmp' lookup ccmp_arab_5 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6;
+    sub @ccmp' lookup ccmp_arab_5 @ccmp2' lookup ccmp_arab_6 @ccmp2' lookup ccmp_arab_6;
+    sub @ccmp' lookup ccmp_arab_5 @ccmp2' lookup ccmp_arab_6;
+    sub [uni0600.ccmp uni0601.13 uni0602.ccmp uni0603.ccmp uni0604.ccmp uni06DD.17] @ccmp5 @ccmp4' lookup ccmp_arab_8;
+    sub _1485 @ccmp5 @ccmp4' lookup ccmp_arab_8;
+    lookup ccmp_arab_9;
+    language SND;
+    # Sindhi
+    language URD;
+    # Urdu
+    language KSH;
+    # Kashmiri
+    language FAR;
+    # Farsi";
 name = ccmp;
 },
 {
 code = "# GSUB feature: Terminal Forms
-# Lookups: 1
-
-  script arab; # Arabic
-  sub @fina by @fina2;
-    language SND ; # Sindhi
-    language URD ; # Urdu
-    language KSH ; # Kashmiri
-    language FAR ; # Farsi";
+    # Lookups: 1
+    script arab;
+    # Arabic
+    sub @fina by @fina2;
+    language SND;
+    # Sindhi
+    language URD;
+    # Urdu
+    language KSH;
+    # Kashmiri
+    language FAR;
+    # Farsi";
 name = fina;
 },
 {
 code = "# GSUB feature: Initial Forms
-# Lookups: 1
-
-  script arab; # Arabic
-  sub @init_medi by @init;
-    language SND ; # Sindhi
-    language URD ; # Urdu
-    language KSH ; # Kashmiri
-    language FAR ; # Farsi";
+    # Lookups: 1
+    script arab;
+    # Arabic
+    sub @init_medi by @init;
+    language SND;
+    # Sindhi
+    language URD;
+    # Urdu
+    language KSH;
+    # Kashmiri
+    language FAR;
+    # Farsi";
 name = init;
 },
 {
 code = "# GSUB feature: Medial Forms
-# Lookups: 1
-
-  script arab; # Arabic
-  sub @init_medi by @medi;
-    language SND ; # Sindhi
-    language URD ; # Urdu
-    language KSH ; # Kashmiri
-    language FAR ; # Farsi";
+    # Lookups: 1
+    script arab;
+    # Arabic
+    sub @init_medi by @medi;
+    language SND;
+    # Sindhi
+    language URD;
+    # Urdu
+    language KSH;
+    # Kashmiri
+    language FAR;
+    # Farsi";
 name = medi;
 },
 {
 code = "# GSUB feature: Required Ligatures
-# Lookups: 2
+    # Lookups: 2
+    lookup rlig_arab_2 {
+        # GSUB lookup 8, type 15 (Context)
+        lookupflag IgnoreMarks;
+        sub [uni0644.init uni06B5.init uni06B6.init uni06B7.init uni06B8.init uni076A.init uni08A6.init]' lookup rlig_arab_3 [uniFB51 uniFE82 uniFE84 uniFE88 uniFE8E uni0672.fina uni0673.fina uni0675.fina uni0773.fina uni0774.fina]' lookup rlig_arab_3;
+        sub [uni0644.medi uni06B5.medi uni06B6.medi uni06B7.medi uni06B8.medi uni076A.medi uni08A6.medi]' lookup rlig_arab_4 [uniFB51 uniFE82 uniFE84 uniFE88 uniFE8E uni0672.fina uni0673.fina uni0675.fina uni0773.fina uni0774.fina]' lookup rlig_arab_4;
+    } rlig_arab_2;
 
-  lookup rlig_arab_2 {
-  # GSUB lookup 8, type 15 (Context)
-    lookupflag IgnoreMarks;
-    sub [uni0644.init uni06B5.init uni06B6.init uni06B7.init uni06B8.init uni076A.init uni08A6.init]' lookup rlig_arab_3 [uniFB51 uniFE82 uniFE84 uniFE88 uniFE8E uni0672.fina uni0673.fina uni0675.fina uni0773.fina uni0774.fina]' lookup rlig_arab_3;
-    sub [uni0644.medi uni06B5.medi uni06B6.medi uni06B7.medi uni06B8.medi uni076A.medi uni08A6.medi]' lookup rlig_arab_4 [uniFB51 uniFE82 uniFE84 uniFE88 uniFE8E uni0672.fina uni0673.fina uni0675.fina uni0773.fina uni0774.fina]' lookup rlig_arab_4;
-  } rlig_arab_2;
+    lookup rlig_arab_1 {
+        # GSUB lookup 7, type 14 (Ligature)
+        lookupflag IgnoreMarks;
+        sub uni0644.init uniFB51 by uniFEDF_uniFB51;
+        sub uni0644.init uniFE82 by uniFEF5;
+        sub uni0644.init uniFE84 by uniFEF7;
+        sub uni0644.init uniFE88 by uniFEF9;
+        sub uni0644.init uniFE8E by uniFEFB;
+        sub uni0644.init uni0672.fina by _670;
+        sub uni0644.init uni0673.fina by uniFEFB_uni065F;
+        sub uni0644.init uni0675.fina by uniFEFB_uni0654;
+        sub uni0644.medi uniFB51 by uniFEE0_uniFB51;
+        sub uni0644.medi uniFE82 by uniFEF6;
+        sub uni0644.medi uniFE84 by uniFEF8;
+        sub uni0644.medi uniFE88 by uniFEFA;
+        sub uni0644.medi uniFE8E by uniFEFC;
+        sub uni0644.medi uni0672.fina by _671;
+        sub uni0644.medi uni0673.fina by uniFEFC_uni065F;
+        sub uni0644.medi uni0675.fina by uniFEFC_uni0675;
+        sub uni06B5.init uniFE8E by uniFEFB_uni065A;
+        sub uni06B5.medi uniFE8E by uniFEFC_uni065A;
+        sub uni06B6.init uniFE8E by uni06B6_uni0627;
+        sub uni06B6.medi uniFE8E by uniFEFC_uniFBB2;
+        sub uni06B7.init uniFE8E by uniFEFB_uniFBB6;
+        sub uni06B7.medi uniFE8E by uniFEFC_uniFBB6;
+        sub uni06B8.init uniFE8E by uniFEFB_uniFBB7;
+        sub uni06B8.medi uniFE8E by uniFEFC_uniFBB7;
+        sub uni076A.init uniFE8E by _778;
+        sub uni076A.medi uniFE8E by _779;
+        sub uniFEE0 uni0773.fina by uniFEFC_uni0773;
+        sub uniFEE0 uni0774.fina by uniFEFC_uni0774;
+        sub uni06B5.medi uni0675.fina by uni06B5_uni0675;
+        sub uni06B5.medi uni0773.fina by uni06B5_uni0773;
+        sub uni06B5.medi uni0774.fina by uni06B5_uni0774;
+        sub uni06B8.medi uni0675.fina by uni06B8_uni0675;
+        sub uni06B8.medi uni0773.fina by uni06B8_uni0773;
+        sub uni06B8.medi uni0774.fina by uni06B8_uni0774;
+        sub uni06B6.medi uni0675.fina by uni06B6_uni0675;
+        sub uni06B6.medi uni0773.fina by uni06B6_uni0773;
+        sub uni06B6.medi uni0774.fina by uni06B6_uni0774;
+        sub uni06B7.medi uni0675.fina by uni06B7_uni0675;
+        sub uni06B7.medi uni0773.fina by uni06B7_uni0773;
+        sub uni06B7.medi uni0774.fina by uni06B7_uni0774;
+    } rlig_arab_1;
 
-  lookup rlig_arab_1 {
-  # GSUB lookup 7, type 14 (Ligature)
-    lookupflag IgnoreMarks;
-    sub uni0644.init uniFB51 by uniFEDF_uniFB51;
-    sub uni0644.init uniFE82 by uniFEF5;
-    sub uni0644.init uniFE84 by uniFEF7;
-    sub uni0644.init uniFE88 by uniFEF9;
-    sub uni0644.init uniFE8E by uniFEFB;
-    sub uni0644.init uni0672.fina by _670;
-    sub uni0644.init uni0673.fina by uniFEFB_uni065F;
-    sub uni0644.init uni0675.fina by uniFEFB_uni0654;
-    sub uni0644.medi uniFB51 by uniFEE0_uniFB51;
-    sub uni0644.medi uniFE82 by uniFEF6;
-    sub uni0644.medi uniFE84 by uniFEF8;
-    sub uni0644.medi uniFE88 by uniFEFA;
-    sub uni0644.medi uniFE8E by uniFEFC;
-    sub uni0644.medi uni0672.fina by _671;
-    sub uni0644.medi uni0673.fina by uniFEFC_uni065F;
-    sub uni0644.medi uni0675.fina by uniFEFC_uni0675;
-    sub uni06B5.init uniFE8E by uniFEFB_uni065A;
-    sub uni06B5.medi uniFE8E by uniFEFC_uni065A;
-    sub uni06B6.init uniFE8E by uni06B6_uni0627;
-    sub uni06B6.medi uniFE8E by uniFEFC_uniFBB2;
-    sub uni06B7.init uniFE8E by uniFEFB_uniFBB6;
-    sub uni06B7.medi uniFE8E by uniFEFC_uniFBB6;
-    sub uni06B8.init uniFE8E by uniFEFB_uniFBB7;
-    sub uni06B8.medi uniFE8E by uniFEFC_uniFBB7;
-    sub uni076A.init uniFE8E by _778;
-    sub uni076A.medi uniFE8E by _779;
-    sub uniFEE0 uni0773.fina by uniFEFC_uni0773;
-    sub uniFEE0 uni0774.fina by uniFEFC_uni0774;
-    sub uni06B5.medi uni0675.fina by uni06B5_uni0675;
-    sub uni06B5.medi uni0773.fina by uni06B5_uni0773;
-    sub uni06B5.medi uni0774.fina by uni06B5_uni0774;
-    sub uni06B8.medi uni0675.fina by uni06B8_uni0675;
-    sub uni06B8.medi uni0773.fina by uni06B8_uni0773;
-    sub uni06B8.medi uni0774.fina by uni06B8_uni0774;
-    sub uni06B6.medi uni0675.fina by uni06B6_uni0675;
-    sub uni06B6.medi uni0773.fina by uni06B6_uni0773;
-    sub uni06B6.medi uni0774.fina by uni06B6_uni0774;
-    sub uni06B7.medi uni0675.fina by uni06B7_uni0675;
-    sub uni06B7.medi uni0773.fina by uni06B7_uni0773;
-    sub uni06B7.medi uni0774.fina by uni06B7_uni0774;
-  } rlig_arab_1;
-
-  script arab; # Arabic
-  lookup rlig_arab_1;
-  lookup rlig_arab_2;
-    language SND ; # Sindhi
-    language URD ; # Urdu
-    language KSH ; # Kashmiri
-    language FAR ; # Fa";
+    script arab;
+    # Arabic
+    lookup rlig_arab_1;
+    lookup rlig_arab_2;
+    language SND;
+    # Sindhi
+    language URD;
+    # Urdu
+    language KSH;
+    # Kashmiri
+    language FAR;
+    # Fa";
 name = rlig;
 },
 {
 code = "# GSUB feature: Standard Ligatures
-# Lookups: 2
+    # Lookups: 2
+    lookup liga_arab_2 {
+        # GSUB lookup 23, type 14 (Ligature)
+        lookupflag IgnoreMarks;
+        sub uniFEDF uniFEE0 uniFEEA by uniFEDF_uniFEE0_uniFEEA;
+        sub uniFEDF uniFEE0 uniFBA7 by uniFEDF_uniFEE0_uniFEEA;
+    } liga_arab_2;
 
-  lookup liga_arab_2 {
-  # GSUB lookup 23, type 14 (Ligature)
-    lookupflag IgnoreMarks;
-    sub uniFEDF uniFEE0 uniFEEA by uniFEDF_uniFEE0_uniFEEA;
-    sub uniFEDF uniFEE0 uniFBA7 by uniFEDF_uniFEE0_uniFEEA;
-  } liga_arab_2;
-
-  script arab; # Arabic
-  sub uni0627 uniFEDF uniFEE0 uni0651_uni0670 uniFEEA by uniFDF2;
-  sub uni0627 uniFEDF uniFEE0 uni0651_uni0670 uniFBA7 by uniFDF2;
-  lookup liga_arab_2;
-    language SND ; # Sindhi
-    language URD ; # Urdu
-    language KSH ; # Kashmiri
-    language FAR ; # Farsi";
+    script arab;
+    # Arabic
+    sub uni0627 uniFEDF uniFEE0 uni0651_uni0670 uniFEEA by uniFDF2;
+    sub uni0627 uniFEDF uniFEE0 uni0651_uni0670 uniFBA7 by uniFDF2;
+    lookup liga_arab_2;
+    language SND;
+    # Sindhi
+    language URD;
+    # Urdu
+    language KSH;
+    # Kashmiri
+    language FAR;
+    # Farsi";
 name = liga;
 },
 {
 code = "# GSUB feature: Localized Forms
-# Lookups: 4
+    # Lookups: 4
+    lookup locl_arabURD_arabKSH_1 {
+        # GSUB lookup 12, type 11 (Single)
+        sub [uni06F4 uni06F6 uni06F7] by [uni06F4.locl uni0666 uni06F7.locl];
+    } locl_arabURD_arabKSH_1;
 
-  lookup locl_arabURD_arabKSH_1 {
-  # GSUB lookup 12, type 11 (Single)
-    sub [uni06F4 uni06F6 uni06F7] by [uni06F4.locl uni0666 uni06F7.locl];
-  } locl_arabURD_arabKSH_1;
-
-  script latn; # Latin
-  sub [uni0021 uni002E] by [uni0021.locl uni002E.locl];
-
-  script arab; # Arabic
-    language SND ; # Sindhi
+    script latn;
+    # Latin
+    sub [uni0021 uni002E] by [uni0021.locl uni002E.locl];
+    script arab;
+    # Arabic
+    language SND;
+    # Sindhi
     sub [uni06F6 uni06F7] by [uni0666 uni06F7.locl];
-
-    language URD ; # Urdu
+    language URD;
+    # Urdu
     lookup locl_arabURD_arabKSH_1;
-
-    language KSH ; # Kashmiri
+    language KSH;
+    # Kashmiri
     lookup locl_arabURD_arabKSH_1;
-
-    language FAR ; # Farsi
+    language FAR;
+    # Farsi
     sub [uni066B uni066C uni00AB uni00BB] by [uni066B.locl uni066B.1 uni00AB.locl uni00BB.locl];";
 name = locl;
 },
 {
 code = "# GSUB feature: Tabular Figures
-# Lookups: 1
-
-  script arab; # Arabic
-  sub @tnum by @tnum2;
-    language SND ; # Sindhi
-    language URD ; # Urdu
-    language KSH ; # Kashmiri
-    language FAR ; # Farsi";
+    # Lookups: 1
+    script arab;
+    # Arabic
+    sub @tnum by @tnum2;
+    language SND;
+    # Sindhi
+    language URD;
+    # Urdu
+    language KSH;
+    # Kashmiri
+    language FAR;
+    # Farsi";
 name = tnum;
 },
 {
 code = "lookup dlig_RTL {
-lookupflag IgnoreMarks RightToLeft;
-	sub uniFEDF uniFEE0 uniFEEA by uniFEDF_uniFEE0_uniFEEA;
-} dlig_RTL;
+        lookupflag RightToLeft IgnoreMarks;
+        sub uniFEDF uniFEE0 uniFEEA by uniFEDF_uniFEE0_uniFEEA;
+    } dlig_RTL;
 ";
 name = dlig;
 }

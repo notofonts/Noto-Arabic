@@ -164,10 +164,6 @@ jobs:
     strategy:
       matrix:
         font-family:
-          - NotoSansArabic
-          - NotoSansArabicUI
-          - NotoNaskhArabic
-          - NotoNaskhArabicUI
           - NotoKufiArabic
         weight: [100, 400, 700, 900]
     steps:

@@ -96,19 +96,25 @@ jobs:
           - NotoSansArabic
           - NotoSansArabicUI
           - NotoKufiArabic
-        include:
-            - font-family: NotoKufiArabic
-              weight: [100, 400, 700, 900]
+        weight: [100, 400, 700, 900]
+        width: [62.5, 100]
+        exclude:
             - font-family: NotoNaskhArabic
-              weight: [400, 700]
+              weight: 100
             - font-family: NotoNaskhArabicUI
-              weight: [400, 700]
-            - font-family: NotoSansArabic
-              weight: [100, 400, 700, 900]
-              width: [62.5, 100]
-            - font-family: NotoSansArabicUI
-              weight: [100, 400, 700, 900]
-              width: [62.5, 100]
+              weight: 100
+            - font-family: NotoNaskhArabic
+              weight: 900
+            - font-family: NotoNaskhArabicUI
+              weight: 900
+            - font-family: NotoNaskhArabic
+              width: 62.5
+            - font-family: NotoNaskhArabicUI
+              width: 62.5
+            - font-family: NotoKufiArabic
+              width: 62.5
+            - font-family: NotoKufiArabicUI
+              width: 62.5
     steps:
       - name: Pull main repository
         uses: actions/checkout@v2

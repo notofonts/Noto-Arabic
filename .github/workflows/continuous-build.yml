@@ -16,8 +16,7 @@ jobs:
         font-source:
           - NotoSansArabic-MM.glyphs
           - NotoSansArabicUI-MM.glyphs
-          - NotoNaskhArabic/NotoNaskhArabic.glyphs
-          - NotoNaskhArabicUI/NotoNaskhArabicUI.glyphs
+          - NotoNaskhArabic.glyphs
           - NotoKufiArabic.glyphs
     steps:
     - name: Cancel previous
@@ -37,6 +36,11 @@ jobs:
     - name: Build ${{ matrix.font-source }}
       run: |
         fontmake -g sources/${{ matrix.font-source}} -o variable
+    - name: Slice UI font
+      if: ${{ matrix.font-source == 'NotoNaskhArabic.glyphs' }}
+      run: |
+        fonttools varLib.instancer --update-name-table -o variable_ttf/NotoNaskhArabicUI-VF.ttf variable_ttf/NotoNaskhArabic-VF.ttf VLHT=1362
+        fonttools varLib.instancer --update-name-table -o variable_ttf/NotoNaskhArabic-VF.ttf variable_ttf/NotoNaskhArabic-VF.ttf VLHT=0
     - name: Store fonts
       uses: actions/upload-artifact@v1
       with:

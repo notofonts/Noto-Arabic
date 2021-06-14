@@ -90,19 +90,25 @@ jobs:
     needs: build
     strategy:
       matrix:
-        font:
-          - family: NotoNaskhArabic
-            weight: [100, 400, 700, 900]
-            width: [62.5, 100]
-          - family: NotoNaskhArabicUI
-            weight: [100, 400, 700, 900]
-            width: [62.5, 100]
-          - family: NotoNaskhArabic
-            weight: [400, 700]
-          - family: NotoNaskhArabicUI
-            weight: [400, 700]
-          - family: NotoKufiArabic
-            weight: [100, 400, 700, 900]
+        font-family:
+          - NotoNaskhArabic
+          - NotoNaskhArabicUI
+          - NotoSansArabic
+          - NotoSansArabicUI
+          - NotoKufiArabic
+        include:
+            - font-family: NotoKufiArabic
+              weight: [100, 400, 700, 900]
+            - font-family: NotoNaskhArabic
+              weight: [400, 700]
+            - font-family: NotoNaskhArabicUI
+              weight: [400, 700]
+            - font-family: NotoSansArabic
+              weight: [100, 400, 700, 900]
+              width: [62.5, 100]
+            - font-family: NotoSansArabicUI
+              weight: [100, 400, 700, 900]
+              width: [62.5, 100]
     steps:
       - name: Pull main repository
         uses: actions/checkout@v2
@@ -118,19 +124,19 @@ jobs:
       - name: Download previous fonts
         run: |
           mkdir -p previous
-          curl -o previous/${{ matrix.font.family }}-VF.ttf https://raw.githubusercontent.com/googlefonts/noto-fonts/main/unhinted/variable-ttf/${{ matrix.font.family }}-VF.ttf
+          curl -o previous/${{ matrix.font-family }}-VF.ttf https://raw.githubusercontent.com/googlefonts/noto-fonts/main/unhinted/variable-ttf/${{ matrix.font-family }}-VF.ttf
       - name: Run fontdiffenator
-        if: ${{ matrix.font.family == 'NotoSansArabic' || matrix.font.family == 'NotoSansArabicUI' }}
+        if: ${{ matrix.font-family == 'NotoSansArabic' || matrix.font-family == 'NotoSansArabicUI' }}
         run: |
-          mkdir -p reports/fontdiffenator/${{ matrix.font.family }}-weight${{ matrix.font.weight }}-width${{ matrix.font.width }}
-          fontdiffenator previous/${{ matrix.font.family }}-VF.ttf builds/variable_ttf/${{ matrix.font.family }}-VF.ttf -i "wght=${{ matrix.font.weight }}, wdth=${{ matrix.font.width }}" --html -r images > ${{ matrix.font.family }}-weight${{ matrix.font.weight }}-width${{ matrix.font.width }}.html
-          mv images ${{ matrix.font.family }}-weight${{ matrix.font.weight }}-width${{ matrix.font.width }}.html reports/fontdiffenator/${{ matrix.font.family }}-weight${{ matrix.font.weight }}-width${{ matrix.font.width }}
+          mkdir -p reports/fontdiffenator/${{ matrix.font-family }}-weight${{ matrix.weight }}-width${{ matrix.width }}
+          fontdiffenator previous/${{ matrix.font-family }}-VF.ttf builds/variable_ttf/${{ matrix.font-family }}-VF.ttf -i "wght=${{ matrix.weight }}, wdth=${{ matrix.width }}" --html -r images > ${{ matrix.font-family }}-weight${{ matrix.weight }}-width${{ matrix.width }}.html
+          mv images ${{ matrix.font-family }}-weight${{ matrix.weight }}-width${{ matrix.width }}.html reports/fontdiffenator/${{ matrix.font-family }}-weight${{ matrix.weight }}-width${{ matrix.width }}
       - name: Run fontdiffenator
-        if: ${{ matrix.font.family != 'NotoSansArabic' && matrix.font.family != 'NotoSansArabicUI' }}
+        if: ${{ matrix.font-family != 'NotoSansArabic' && matrix.font-family != 'NotoSansArabicUI' }}
         run: |
-          mkdir -p reports/fontdiffenator/${{ matrix.font.family }}-weight${{ matrix.font.weight }}
-          fontdiffenator previous/${{ matrix.font.family }}-VF.ttf builds/variable_ttf/${{ matrix.font.family }}-VF.ttf -i "wght=${{ matrix.font.weight }}" --html -r images > ${{ matrix.font.family }}-weight${{ matrix.font.weight }}.html
-          mv images ${{ matrix.font.family }}-weight${{ matrix.font.weight }}.html reports/fontdiffenator/${{ matrix.font.family }}-weight${{ matrix.font.weight }}
+          mkdir -p reports/fontdiffenator/${{ matrix.font-family }}-weight${{ matrix.weight }}
+          fontdiffenator previous/${{ matrix.font-family }}-VF.ttf builds/variable_ttf/${{ matrix.font-family }}-VF.ttf -i "wght=${{ matrix.weight }}" --html -r images > ${{ matrix.font-family }}-weight${{ matrix.weight }}.html
+          mv images ${{ matrix.font-family }}-weight${{ matrix.weight }}.html reports/fontdiffenator/${{ matrix.font-family }}-weight${{ matrix.weight }}
       - name: Store FontDiffenator reports
         uses: actions/upload-artifact@v1
         with:

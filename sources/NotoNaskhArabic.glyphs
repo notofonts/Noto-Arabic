@@ -1134,6 +1134,43 @@ lookup ccmp_arab_8 {
 # Feature definitions
 #";
 name = Prefix;
+},
+{
+code = "table STAT {
+    ElidedFallbackName { name \"Regular\"; };
+
+    DesignAxis wght 0 { name \"Weight\"; };
+    DesignAxis VLHT 1 { name \"Vertical height\"; };
+
+    AxisValue {
+        location wght 400;
+        name \"Regular\";
+        flag ElidableAxisValueName;
+    };
+    AxisValue {
+        location wght 500;
+        name \"Medium\";
+    };
+    AxisValue {
+        location wght 600;
+        name \"SemiBold\";
+    };
+    AxisValue {
+        location wght 700;
+        name \"Bold\";
+    };
+
+    AxisValue {
+        location VLHT 0;
+        name \"Normal\";
+        flag ElidableAxisValueName;
+    };
+    AxisValue {
+        location VLHT 1362;
+        name \"UI\";
+    };
+} STAT;";
+name = STAT;
 }
 );
 features = (

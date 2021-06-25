@@ -3015,9 +3015,11 @@ position = "{113, 910}";
 );
 components = (
 {
+alignment = -1;
 name = _517;
 },
 {
+alignment = -1;
 name = uni0654;
 transform = "{1, 0, 0, 1, 56, 204}";
 }
@@ -3042,9 +3044,11 @@ position = "{131, 912}";
 );
 components = (
 {
+alignment = -1;
 name = _517;
 },
 {
+alignment = -1;
 name = uni0654;
 transform = "{1, 0, 0, 1, 61, 204}";
 }
@@ -3074,6 +3078,7 @@ name = _517;
 transform = "{1, 0, 0, 1, -1, 0}";
 },
 {
+alignment = -1;
 name = uni0654;
 transform = "{1, 0, 0, 1, 56, 58}";
 }
@@ -3103,6 +3108,7 @@ name = _517;
 transform = "{1, 0, 0, 1, 14, 0}";
 },
 {
+alignment = -1;
 name = uni0654;
 transform = "{1, 0, 0, 1, 61, 86}";
 }
@@ -3379,6 +3385,7 @@ position = "{142, 729}";
 );
 components = (
 {
+alignment = -1;
 name = uni0627;
 },
 {
@@ -3436,9 +3443,11 @@ position = "{142, 864}";
 );
 components = (
 {
+alignment = -1;
 name = uni0627;
 },
 {
+alignment = -1;
 name = uni0655;
 transform = "{1, 0, 0, 1, 67, -102}";
 }
@@ -3469,6 +3478,7 @@ position = "{118, 720}";
 );
 components = (
 {
+alignment = -1;
 name = uniFE8E;
 },
 {
@@ -3497,6 +3507,7 @@ position = "{138, 729}";
 );
 components = (
 {
+alignment = -1;
 name = uniFE8E;
 },
 {
@@ -3525,9 +3536,11 @@ position = "{118, 855}";
 );
 components = (
 {
+alignment = -1;
 name = uniFE8E;
 },
 {
+alignment = -1;
 name = uni0655;
 transform = "{1, 0, 0, 1, 82, -93}";
 }
@@ -3552,9 +3565,11 @@ position = "{138, 864}";
 );
 components = (
 {
+alignment = -1;
 name = uniFE8E;
 },
 {
+alignment = -1;
 name = uni0655;
 transform = "{1, 0, 0, 1, 90, -102}";
 }
@@ -3581,9 +3596,11 @@ position = "{77, 607}";
 );
 components = (
 {
+alignment = -1;
 name = uniFE8E.rlig;
 },
 {
+alignment = -1;
 name = uni0655;
 transform = "{1, 0, 0, 1, 70, -143}";
 }
@@ -3604,9 +3621,11 @@ position = "{77, 607}";
 );
 components = (
 {
+alignment = -1;
 name = uniFE8E.rlig;
 },
 {
+alignment = -1;
 name = uni0655;
 transform = "{1, 0, 0, 1, 70, -153}";
 }
@@ -3627,9 +3646,11 @@ position = "{77, 742}";
 );
 components = (
 {
+alignment = -1;
 name = uniFE8E.rlig;
 },
 {
+alignment = -1;
 name = uni0655;
 transform = "{1, 0, 0, 1, 88, -97}";
 }
@@ -3650,9 +3671,11 @@ position = "{77, 742}";
 );
 components = (
 {
+alignment = -1;
 name = uniFE8E.rlig;
 },
 {
+alignment = -1;
 name = uni0655;
 transform = "{1, 0, 0, 1, 78, -106}";
 }
@@ -3686,6 +3709,7 @@ alignment = -1;
 name = _517;
 },
 {
+alignment = -1;
 name = _538;
 transform = "{1, 0, 0, 1, 86, 214}";
 }
@@ -3714,6 +3738,7 @@ alignment = -1;
 name = _517;
 },
 {
+alignment = -1;
 name = _538;
 transform = "{1, 0, 0, 1, 106, 223}";
 }
@@ -3743,6 +3768,7 @@ name = _517;
 transform = "{1, 0, 0, 1, -1, 0}";
 },
 {
+alignment = -1;
 name = _538;
 transform = "{1, 0, 0, 1, 86, 69}";
 }
@@ -3772,6 +3798,7 @@ name = _517;
 transform = "{1, 0, 0, 1, 14, 0}";
 },
 {
+alignment = -1;
 name = _538;
 transform = "{1, 0, 0, 1, 106, 113}";
 }
@@ -4355,9 +4382,11 @@ position = "{123, 816}";
 );
 components = (
 {
+alignment = -1;
 name = _517;
 },
 {
+alignment = -1;
 name = uni0653;
 transform = "{1, 0, 0, 1, 55, 168}";
 }
@@ -4382,9 +4411,11 @@ position = "{143, 825}";
 );
 components = (
 {
+alignment = -1;
 name = _517;
 },
 {
+alignment = -1;
 name = uni0653;
 transform = "{1, 0, 0, 1, 75, 168}";
 }
@@ -4409,9 +4440,11 @@ position = "{123, 841}";
 );
 components = (
 {
+alignment = -1;
 name = _517;
 },
 {
+alignment = -1;
 name = uni0653;
 transform = "{1, 0, 0, 1, 55, 58}";
 }
@@ -4436,9 +4469,11 @@ position = "{143, 855}";
 );
 components = (
 {
+alignment = -1;
 name = _517;
 },
 {
+alignment = -1;
 name = uni0653;
 transform = "{1, 0, 0, 1, 75, 63}";
 }
@@ -4688,6 +4723,7 @@ alignment = -1;
 name = _517;
 },
 {
+alignment = -1;
 name = _528;
 transform = "{1, 0, 0, 1, 65, 187}";
 }
@@ -4716,6 +4752,7 @@ alignment = -1;
 name = _517;
 },
 {
+alignment = -1;
 name = _528;
 transform = "{1, 0, 0, 1, 85, 206}";
 }
@@ -4745,6 +4782,7 @@ name = _517;
 transform = "{1, 0, 0, 1, -1, 0}";
 },
 {
+alignment = -1;
 name = _528;
 transform = "{1, 0, 0, 1, 65, 60}";
 }
@@ -4774,6 +4812,7 @@ name = _517;
 transform = "{1, 0, 0, 1, 14, 0}";
 },
 {
+alignment = -1;
 name = _528;
 transform = "{1, 0, 0, 1, 85, 108}";
 }
@@ -4913,6 +4952,7 @@ alignment = -1;
 name = _518;
 },
 {
+alignment = -1;
 name = _528;
 transform = "{1, 0, 0, 1, 61, 187}";
 }
@@ -4941,6 +4981,7 @@ alignment = -1;
 name = _518;
 },
 {
+alignment = -1;
 name = _528;
 transform = "{1, 0, 0, 1, 81, 206}";
 }
@@ -4969,6 +5010,7 @@ alignment = -1;
 name = _518;
 },
 {
+alignment = -1;
 name = _528;
 transform = "{1, 0, 0, 1, 61, 60}";
 }
@@ -4998,6 +5040,7 @@ name = _518;
 transform = "{1, 0, 0, 1, 43, 0}";
 },
 {
+alignment = -1;
 name = _528;
 transform = "{1, 0, 0, 1, 81, 108}";
 }
@@ -263255,9 +263298,11 @@ position = "{89, 580}";
 );
 components = (
 {
+alignment = -1;
 name = _1008;
 },
 {
+alignment = -1;
 name = uni0655;
 transform = "{1, 0, 0, 1, 84, -143}";
 }
@@ -263282,6 +263327,7 @@ alignment = -1;
 name = _1008;
 },
 {
+alignment = -1;
 name = uni0655;
 transform = "{1, 0, 0, 1, 84, -153}";
 }
@@ -263302,9 +263348,11 @@ position = "{89, 715}";
 );
 components = (
 {
+alignment = -1;
 name = _1008;
 },
 {
+alignment = -1;
 name = uni0655;
 transform = "{1, 0, 0, 1, 112, -97}";
 }
@@ -263329,6 +263377,7 @@ alignment = -1;
 name = _1008;
 },
 {
+alignment = -1;
 name = uni0655;
 transform = "{1, 0, 0, 1, 112, -106}";
 }

@@ -3071,6 +3071,7 @@ components = (
 {
 alignment = -1;
 name = _517;
+transform = "{1, 0, 0, 1, -1, 0}";
 },
 {
 name = uni0654;
@@ -3439,7 +3440,7 @@ name = uni0627;
 },
 {
 name = uni0655;
-transform = "{1, 0, 0, 1, 69, -153}";
+transform = "{1, 0, 0, 1, 67, -102}";
 }
 );
 layerId = "18C77D5F-ED10-4168-95B9-051BAE91B178";
@@ -3528,7 +3529,7 @@ name = uniFE8E;
 },
 {
 name = uni0655;
-transform = "{1, 0, 0, 1, 84, -143}";
+transform = "{1, 0, 0, 1, 82, -93}";
 }
 );
 layerId = "143861DA-B231-41A0-B179-A3B31F206E93";
@@ -3555,7 +3556,7 @@ name = uniFE8E;
 },
 {
 name = uni0655;
-transform = "{1, 0, 0, 1, 92, -153}";
+transform = "{1, 0, 0, 1, 90, -102}";
 }
 );
 layerId = "18C77D5F-ED10-4168-95B9-051BAE91B178";
@@ -3630,7 +3631,7 @@ name = uniFE8E.rlig;
 },
 {
 name = uni0655;
-transform = "{1, 0, 0, 1, 70, -143}";
+transform = "{1, 0, 0, 1, 88, -97}";
 }
 );
 layerId = "143861DA-B231-41A0-B179-A3B31F206E93";
@@ -3653,7 +3654,7 @@ name = uniFE8E.rlig;
 },
 {
 name = uni0655;
-transform = "{1, 0, 0, 1, 70, -153}";
+transform = "{1, 0, 0, 1, 78, -106}";
 }
 );
 layerId = "18C77D5F-ED10-4168-95B9-051BAE91B178";
@@ -3743,7 +3744,7 @@ transform = "{1, 0, 0, 1, -1, 0}";
 },
 {
 name = _538;
-transform = "{1, 0, 0, 1, 84, 86}";
+transform = "{1, 0, 0, 1, 86, 69}";
 }
 );
 layerId = "143861DA-B231-41A0-B179-A3B31F206E93";
@@ -3772,7 +3773,7 @@ transform = "{1, 0, 0, 1, 14, 0}";
 },
 {
 name = _538;
-transform = "{1, 0, 0, 1, 100, 131}";
+transform = "{1, 0, 0, 1, 106, 113}";
 }
 );
 layerId = "18C77D5F-ED10-4168-95B9-051BAE91B178";
@@ -4399,7 +4400,7 @@ position = "{127, 35}";
 },
 {
 name = bottom.dot;
-position = "{127, 107}";
+position = "{127, 87}";
 },
 {
 name = top;
@@ -4412,7 +4413,7 @@ name = _517;
 },
 {
 name = uni0653;
-transform = "{1, 0, 0, 1, 54, 40}";
+transform = "{1, 0, 0, 1, 55, 58}";
 }
 );
 layerId = "143861DA-B231-41A0-B179-A3B31F206E93";
@@ -4439,7 +4440,7 @@ name = _517;
 },
 {
 name = uni0653;
-transform = "{1, 0, 0, 1, 55, 76}";
+transform = "{1, 0, 0, 1, 75, 63}";
 }
 );
 layerId = "18C77D5F-ED10-4168-95B9-051BAE91B178";
@@ -4745,7 +4746,7 @@ transform = "{1, 0, 0, 1, -1, 0}";
 },
 {
 name = _528;
-transform = "{1, 0, 0, 1, 63, 59}";
+transform = "{1, 0, 0, 1, 65, 60}";
 }
 );
 layerId = "143861DA-B231-41A0-B179-A3B31F206E93";
@@ -4774,7 +4775,7 @@ transform = "{1, 0, 0, 1, 14, 0}";
 },
 {
 name = _528;
-transform = "{1, 0, 0, 1, 79, 114}";
+transform = "{1, 0, 0, 1, 85, 108}";
 }
 );
 layerId = "18C77D5F-ED10-4168-95B9-051BAE91B178";
@@ -4969,7 +4970,7 @@ name = _518;
 },
 {
 name = _528;
-transform = "{1, 0, 0, 1, 64, 62}";
+transform = "{1, 0, 0, 1, 61, 60}";
 }
 );
 layerId = "143861DA-B231-41A0-B179-A3B31F206E93";
@@ -4998,7 +4999,7 @@ transform = "{1, 0, 0, 1, 43, 0}";
 },
 {
 name = _528;
-transform = "{1, 0, 0, 1, 81, 114}";
+transform = "{1, 0, 0, 1, 81, 108}";
 }
 );
 layerId = "18C77D5F-ED10-4168-95B9-051BAE91B178";
@@ -246210,23 +246211,22 @@ width = 0;
 anchors = (
 {
 name = _top;
-position = "{74, 450}";
+position = "{220, 569}";
 },
 {
 name = top3;
-position = "{204, 646}";
+position = "{58, 765}";
 }
 );
 components = (
 {
 alignment = -1;
 name = uni064F;
-transform = "{1, 0, 0, 1, -2, 27}";
+transform = "{1, 0, 0, 1, 146, 0}";
 },
 {
 alignment = -1;
 name = uni064F;
-transform = "{1, 0, 0, 1, 152, 27}";
 }
 );
 layerId = "143861DA-B231-41A0-B179-A3B31F206E93";
@@ -246236,23 +246236,22 @@ width = 0;
 anchors = (
 {
 name = _top;
-position = "{74, 465}";
+position = "{74, 578}";
 },
 {
 name = top3;
-position = "{204, 661}";
+position = "{204, 774}";
 }
 );
 components = (
 {
 alignment = -1;
 name = uni064F;
-transform = "{1, 0, 0, 1, -5, 22}";
 },
 {
 alignment = -1;
 name = uni064F;
-transform = "{1, 0, 0, 1, 149, 22}";
+transform = "{1, 0, 0, 1, 146, 0}";
 }
 );
 layerId = "18C77D5F-ED10-4168-95B9-051BAE91B178";
@@ -263018,7 +263017,7 @@ name = _1008;
 },
 {
 name = uni0655;
-transform = "{1, 0, 0, 1, 84, -143}";
+transform = "{1, 0, 0, 1, 112, -97}";
 }
 );
 layerId = "143861DA-B231-41A0-B179-A3B31F206E93";
@@ -263042,7 +263041,7 @@ name = _1008;
 },
 {
 name = uni0655;
-transform = "{1, 0, 0, 1, 84, -153}";
+transform = "{1, 0, 0, 1, 112, -106}";
 }
 );
 layerId = "18C77D5F-ED10-4168-95B9-051BAE91B178";

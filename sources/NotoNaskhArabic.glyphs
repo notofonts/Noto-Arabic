@@ -246813,12 +246813,12 @@ components = (
 {
 alignment = -1;
 name = uni0650;
-transform = "{0.99985, 0.01745, -0.01745, 0.99985, -1, -117}";
+transform = "{1, 0, 0, 1, -1, -117}";
 },
 {
 alignment = -1;
 name = uni0650;
-transform = "{0.99985, 0.01745, -0.01745, 0.99985, 86, -1}";
+transform = "{1, 0, 0, 1, 86, -1}";
 }
 );
 layerId = master01;
@@ -246873,12 +246873,12 @@ components = (
 {
 alignment = -1;
 name = uni0650;
-transform = "{0.99985, 0.01745, -0.01745, 0.99985, 3, -118}";
+transform = "{1, 0, 0, 1, 3, -118}";
 },
 {
 alignment = -1;
 name = uni0650;
-transform = "{0.99985, 0.01745, -0.01745, 0.99985, 90, -1}";
+transform = "{1, 0, 0, 1, 90, -1}";
 }
 );
 layerId = "143861DA-B231-41A0-B179-A3B31F206E93";
